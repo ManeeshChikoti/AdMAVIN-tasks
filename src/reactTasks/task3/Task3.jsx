@@ -58,8 +58,11 @@ export default function Task3() {
           </div>
         );
       })}
-      {loading &&( <h1>Loading...</h1>
-      <h1>The api i choose works only on localhost Sorry..(code is perfectly fine)</h1>})
+      {loading &&
+      <>
+      <h1>Loading...</h1>
+      <h1>The api i choose works only on localhost Sorry..(code is perfectly fine)</h1>
+      </>}
     </div>
   );
 }
