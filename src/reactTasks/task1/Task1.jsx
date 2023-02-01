@@ -12,6 +12,7 @@ export default function Task1() {
   ]);
   const [bucket2, setBucket2] = useState(["Item 4", "Item 6"]);
   const [select, setSelect] = useState([]);
+  const [selectbg,setSelectbg]=useState(false);
   let tempBucket1 = [...bucket1];
   let tempBucket2 = [...bucket2];
   //for testing console.log(select);
@@ -27,6 +28,7 @@ export default function Task1() {
       }
     });
     setSelect([]);
+   setSelectbg(false)
   };
   const handleRemove = () => {
   
@@ -49,6 +51,7 @@ export default function Task1() {
     });
 
     setSelect([]);
+    setSelectbg(false)
   };
 
   const handleAddall = (num) => {
@@ -78,7 +81,7 @@ export default function Task1() {
       <div className="left">
         <ul className="ul">
           {bucket1.map((item, i) => (
-            <List item={item} key={i} setSelect={setSelect} select={select} />
+            <List item={item} key={i} setSelect={setSelect} select={select} selectbg={selectbg} setSelectbg={setSelectbg} />
           ))}
         </ul>
       </div>
@@ -96,7 +99,7 @@ export default function Task1() {
               2 to 1
             </span>
           </div>
-        </div>
+        </div> 
         <div className="addOrRemoveAll">
           <span> Remove all </span>
           <div className="optionWrapper">
@@ -113,7 +116,7 @@ export default function Task1() {
       <div className="right">
         <ul className="ul">
           {bucket2.map((item, i) => (
-            <List item={item} key={i} setSelect={setSelect} select={select} />
+            <List item={item} key={i} setSelect={setSelect} select={select}  selectbg={selectbg} setSelectbg={setSelectbg}/>
           ))}
         </ul>
       </div>
