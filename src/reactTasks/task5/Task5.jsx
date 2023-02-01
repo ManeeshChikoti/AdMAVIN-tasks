@@ -27,12 +27,15 @@ const Square=({val})=>{
 }
 export default function Task5() {
   const [isClick, setIsClick] = useState(false);
+  const[squareCount,setSquareCount]=useState(1);
   const handleClick=()=>{
     setIsClick(true);
+    setSquareCount((prev)=>prev+4);
    
   }
   return (
     <div className='Task5'>
+      <h1>Total Squares:{squareCount}</h1>
         <div onClick={handleClick} className="wrapper">
            {isClick &&<CreateSquares/>}
         </div>     
