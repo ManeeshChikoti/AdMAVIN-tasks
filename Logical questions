@@ -1,0 +1,13 @@
+1.A frog fell into a well down 30m deep.Each day it climbs 3m up in morning and goes 2m down in night .So,how many days did it takes to climb the well?
+
+explanation:Frog climbs 1m in one day(3m-2m) and  after 27 days it climbs 27m and on 28 th day it climb 3m and it gets out of the well.
+ Answer:28 days
+ 
+ 
+ 2.Find the heavier among 8 identical balls in weighing ?
+ 
+ explanation:suppose the balls are numbered 1 to 8,the best way is weighing 3 balls one side and other 3 balls on other side of weighing,here there are 2 possibilities
+ a.if the weights on weighing are  equal,then heavier ball is in the remaining 2 balls and can be found by weighing remaining balls again so answer in this case is 2 trials.
+ b.if the weights  on weighing are not equal,suppose 4,5,6 has heavier ball(the answer might be 4 or 5 or 6). to figure out which one it is, weigh any two against each other - say, 4 vs. 5. If one or the other is heavier, than you've found your answer. If the weighing balances, then you know the heavy ball is 6. Again, solved in two trials.
+ 
+ Ans:2 trials
