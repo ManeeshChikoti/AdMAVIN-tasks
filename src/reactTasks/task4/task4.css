@@ -7,23 +7,24 @@
     align-items: center;
     justify-content: center;
 }
-.gameWrapper{
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    height: 600px;
-    /* border: 0.5px solid black; */
-
-}
 h1{
-    
- 
    font-size: 60px;
 }
-.row{
+.game{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    column-gap: 10px;
+}
+.items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   border: 0.5px solid black;
+}
+/* .row{
     display: flex;
-    flex: 1;
-  
+    flex: 1; 
 }
 .col{
  flex: 1;
@@ -33,3 +34,11 @@ h1{
  border: 0.5px solid black;
  margin-left:10px;
 }
+.gameWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    border: 0.5px solid black;
+
+} */
